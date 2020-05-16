@@ -17,6 +17,14 @@ body {
 .calculator {
     position: relative;
     display: grid;
+    transform: rotate(0deg) skewX(0deg);
+    box-shadow: -35px 35px 50px rgba(0, 0, 0, 1);
+    transition: 0.65s;
+}
+
+.calculator:hover {
+    transform: rotate(0deg) skewX(0deg) translate(15px, -15px);
+    box-shadow: -50px 50px 100px rgba(0, 0, 0, 1);
 }
 
 .calculator .value {
@@ -39,7 +47,7 @@ body {
 }
 
 .calculator span:hover {
-    background: whitesmoke;
+    background: gray;
     color: #111;
 }
 
